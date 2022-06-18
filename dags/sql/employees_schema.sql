@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS employees;
 CREATE TABLE IF NOT EXISTS employees (
     "Serial Number" NUMERIC PRIMARY KEY,
     "Company Name" TEXT,
