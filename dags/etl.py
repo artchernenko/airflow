@@ -38,7 +38,7 @@ def Etl():
     @task
     def get_data():
         # NOTE: configure this as appropriate for your airflow environment
-        data_path = "/opt/airflow/dags/files/employees.csv"
+        data_path = "files/employees.csv"
         
         postgres_hook = PostgresHook(postgres_conn_id="tutorial_pg_conn")
         conn = postgres_hook.get_conn()
