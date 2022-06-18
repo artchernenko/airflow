@@ -1,0 +1,15 @@
+/airflow
+/bin
+/logs
+/plugins
+/venv
+/.vscode
+/.env
+/airflow.sh
+diff.out
+tpl.out
+docker-compose.yaml
+requirements.txt
+values.yaml
+.DS_Store
+__pycache__
