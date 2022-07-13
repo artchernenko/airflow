@@ -1,7 +1,7 @@
 apiVersion: "sparkoperator.k8s.io/v1beta2"
 kind: SparkApplication
 metadata:
-  name: "spark-pi-{{ task_instance.run_id | replace('+', '-') | replace(':', '-') | replace('.', '-') }}"
+  name: "spark-pi-{{ task_instance.run_id | replace('+', '-') | replace(':', '-') | replace('.', '-') | replace('T', '-')}}"
   namespace: spark-apps
 spec:
   type: Scala
