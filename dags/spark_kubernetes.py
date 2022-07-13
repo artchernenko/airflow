@@ -27,7 +27,7 @@ with DAG(
     # [START SparkKubernetesOperator_DAG]
     t1 = SparkKubernetesOperator(
         task_id='spark_pi_submit',
-        namespace="default",
+        namespace="spark-apps",
         application_file="manifests/sparkapp.yaml",
         do_xcom_push=True,
         dag=dag,
