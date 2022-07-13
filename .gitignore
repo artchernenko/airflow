@@ -6,10 +6,11 @@
 /.vscode
 /.env
 /airflow.sh
-diff.out
-tpl.out
-docker-compose.yaml
-requirements.txt
-values.yaml
+/diff.out
+/tpl.out
+/docker-compose.yaml
+/requirements.txt
+/values.yaml
 .DS_Store
 __pycache__
+/values-so.yaml
