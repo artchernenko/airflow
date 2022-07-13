@@ -35,7 +35,7 @@ with DAG(
 
     t2 = SparkKubernetesSensor(
         task_id='spark_pi_monitor',
-        namespace="default",
+        namespace="spark-apps",
         application_name="{{ task_instance.xcom_pull(task_ids='spark_pi_submit')['metadata']['name'] }}",
         dag=dag,
     )
