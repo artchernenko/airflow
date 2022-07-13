@@ -1,7 +1,7 @@
 apiVersion: "sparkoperator.k8s.io/v1beta2"
 kind: SparkApplication
 metadata:
-  name: "spark-pi-{{ ds }}-{{ task_instance.try_number }}"
+  name: "spark-pi-{{ task_instance.run_id | replace('+', '-') | replace(':', '-') | replace('.', '-') }}"
   namespace: spark-apps
 spec:
   type: Scala
